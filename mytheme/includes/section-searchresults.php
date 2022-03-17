@@ -16,4 +16,10 @@
     </div>
  </div>
 
-<?php endwhile; else: endif;?>
+<?php endwhile; else:?>
+    
+    <h1>There are NO Results for '<?php echo get_search_query();?>'</h1>
+    
+    
+    
+    <?php endif;?>
