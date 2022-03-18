@@ -47,7 +47,7 @@ register_nav_menus(
 );
 
 //Custom Image Sizes
-add_image_size('blog-large', 600, 400, true);
+add_image_size('blog-large', 800, 600, false);
 add_image_size('blog-small', 300, 200, true);
 
 //Register Sidebars
@@ -84,7 +84,7 @@ function my_first_post_type(){
         'public'=>true,
         'has_archive'=>true,
         'menu_icon'=>'dashicons-car',
-        'supports'=> array('title', 'editor', 'thumbnail'),
+        'supports'=> array('title', 'editor', 'thumbnail', 'custom-fields'),
 
     );
 
